@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { SeedService } from './seed.service';
+import { CreatePokemonDto } from 'src/pokemon/dto/create-pokemon.dto';
 
 @Controller('seed')
 export class SeedController {
